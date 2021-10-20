@@ -1,0 +1,140 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1 {color: #86cc35}
+
+body {
+  background: #282828;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+a:link {color: white;} /*unvisited link colour */
+ a:visited {color: #344873;} /*visited link colour */
+ a:hover {color: #86cc35;} /*hover effect*/
+
+.container {
+  max-width: 550px;
+  margin: 0.5em auto;
+  padding: 0px 10px;
+}
+
+header {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-family: "Montserrat Semibold", sans-serif;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  background: #1a1a1a;
+  width: 100%;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 14px;
+  padding: 0 15px;
+  outline: none;
+  transition: border-color 0.2s ease-in;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #fddb33;
+}
+
+.form-group input:invalid:focus,
+.form-group select:invalid:focus {
+  border-color: #ff7373;
+}
+
+.form-group-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.form-group-btn button {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: 600;
+  width: 49%;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: linear-gradient(-90deg, grey 0%, #86cc35 100%);
+}
+
+.btn-reset {
+  background: linear-gradient(90deg, grey 0%, #86cc35 100%);
+}
+
+.btn-submit:active,
+.btn-reset:active {
+  box-shadow: 0 0 6px black;
+}
+
+.btn-submit:hover,
+.btn-reset:hover {
+  background: grey;
+}
+
+
+.result-container {
+  margin-top: 50px;
+}
+
+
+
+.footer-container {
+  text-align: center;
+  max-width: 100%;
+}
+
+img {
+  width: 150%;
+  height: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
